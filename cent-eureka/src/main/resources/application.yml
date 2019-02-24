@@ -1,3 +1,4 @@
+spring:  application:    name: cent-eureka
 server:
   port: 8761
   
