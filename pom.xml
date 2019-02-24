@@ -62,4 +62,5 @@
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
 	</repositories>
+	<modules></modules>
 </project>
