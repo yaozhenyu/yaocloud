@@ -10,18 +10,18 @@ import com.yaozhenyu.consumer.service.ProviderService;
 @RequestMapping("consumer")
 public class ConsumerHello {
 
-	@Autowired
-	private ProviderService providerService;
+    @Autowired
+    private ProviderService providerService;
 
-	@RequestMapping("/say")
-	public String say() {
-		System.out.println("================say ConsumerHello ===============");
-		return "ConsumerHello.say";
-	}
-	
-	@RequestMapping("/hello")
-	public String consumerHello() {
-		System.out.println("================" + providerService + "===============");
-		return providerService.hello();
-	}
+    @RequestMapping("/say")
+    public String say() {
+        System.out.println("================say ConsumerHello ===============");
+        return "ConsumerHello.say";
+    }
+
+    @RequestMapping("/hello")
+    public String consumerHello() {
+        System.out.println("================" + providerService + "===============");
+        return providerService.hello();
+    }
 }
